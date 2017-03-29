@@ -1,0 +1,25 @@
+//
+//  Employee.h
+//  iOSArchitecture
+//
+//  Created by Darwin on 2017/3/29.
+//  Copyright © 2017年 Darwin. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@protocol EmployeeDelegate <NSObject>
+
+- (void)printJobDone;
+
+@end
+
+@interface Employee : NSObject
+
+@property (nonatomic, weak) id<EmployeeDelegate> delegate;
+
++ (instancetype)sharedInstance;
+
+- (void)doPrintJob;
+
+@end

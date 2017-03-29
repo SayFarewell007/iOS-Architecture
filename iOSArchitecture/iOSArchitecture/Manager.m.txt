@@ -1,0 +1,34 @@
+//
+//  Manager.m
+//  iOSArchitecture
+//
+//  Created by Darwin on 2017/3/29.
+//  Copyright © 2017年 Darwin. All rights reserved.
+//
+
+
+#import "Manager.h"
+#import "Employee.h"
+
+@implementation Manager
+
++ (instancetype)sharedInstance {
+    static Manager* instance = nil;
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [Manager new];
+    });
+    
+    return instance;
+}
+
+- (void)celebratePrintDone {
+    NSLog(@"celebrate print done!");
+}
+
+- (void)beginPrintTask {
+    [[Employee sharedInstance] doPrintJob];
+}
+
+@end
