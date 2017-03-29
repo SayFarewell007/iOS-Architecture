@@ -1,0 +1,49 @@
+//
+//  MVCView.m
+//  iOSArchitecture
+//
+//  Created by Darwin on 2017/3/29.
+//  Copyright © 2017年 Darwin. All rights reserved.
+//
+
+#import "MVCView.h"
+#import "MVCModel.h"
+
+@interface MVCView ()
+
+@property (nonatomic, strong) UIButton *btn;
+
+@end
+
+
+@implementation MVCView
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+        [btn setTitle:@"print" forState:UIControlStateNormal];
+        [btn sizeToFit];
+        btn.frame = CGRectMake(100, 100, 100, 30);
+        [self addSubview:btn];
+        [btn addTarget:self action:@selector(btnclick) forControlEvents:UIControlEventTouchUpInside];
+        self.btn = btn;
+    }
+    return self;
+}
+
+- (void)btnclick {
+    NSLog(@"-----");
+    if(self.delegate) {
+        [self.delegate printBtnClick];
+    }
+}
+
+- (void)printOnView:(MVCModel *)model {
+    
+    NSLog(@"print %d", model.n);
+}
+
+@end

@@ -35,5 +35,9 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:Notifi_PrintTaskDone object:nil];
 }
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:Notifi_BeginPrintTask];
+}
+
 
 @end

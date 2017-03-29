@@ -19,6 +19,13 @@
 		D6CD36B31E8BCA51007ADCAF /* Employee.m.tx in Sources */ = {isa = PBXBuildFile; fileRef = D6CD36B21E8BCA51007ADCAF /* Employee.m.tx */; };
 		D6CD36B71E8BCF3D007ADCAF /* Manager.m.t in Sources */ = {isa = PBXBuildFile; fileRef = D6CD36B61E8BCF3D007ADCAF /* Manager.m.t */; };
 		D6CD36BA1E8BCF47007ADCAF /* Employee.m.t in Sources */ = {isa = PBXBuildFile; fileRef = D6CD36B91E8BCF47007ADCAF /* Employee.m.t */; };
+		D6CD36BF1E8BD47E007ADCAF /* MVCController.m.mvc in Sources */ = {isa = PBXBuildFile; fileRef = D6CD36BE1E8BD47E007ADCAF /* MVCController.m.mvc */; };
+		D6CD36C21E8BD48E007ADCAF /* MVCView.m.mvc in Sources */ = {isa = PBXBuildFile; fileRef = D6CD36C11E8BD48E007ADCAF /* MVCView.m.mvc */; };
+		D6CD36C51E8BD4A8007ADCAF /* MVCModel.m.mvc in Sources */ = {isa = PBXBuildFile; fileRef = D6CD36C41E8BD4A8007ADCAF /* MVCModel.m.mvc */; };
+		D6CD36CA1E8BEDDB007ADCAF /* MVVMController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CD36C91E8BEDDB007ADCAF /* MVVMController.m */; };
+		D6CD36CD1E8BEDEA007ADCAF /* MVVMView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CD36CC1E8BEDEA007ADCAF /* MVVMView.m */; };
+		D6CD36D01E8BEDF8007ADCAF /* MVVMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CD36CF1E8BEDF8007ADCAF /* MVVMModel.m */; };
+		D6CD36D31E8BEE09007ADCAF /* MVVMModelView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CD36D21E8BEE09007ADCAF /* MVVMModelView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +52,20 @@
 		D6CD36B81E8BCF47007ADCAF /* Employee.h.t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Employee.h.t; sourceTree = "<group>"; };
 		D6CD36B91E8BCF47007ADCAF /* Employee.m.t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Employee.m.t; sourceTree = "<group>"; };
 		D6CD36BB1E8BCFAE007ADCAF /* PrintNotification.h.t */ = {isa = PBXFileReference; lastKnownFileType = text; path = PrintNotification.h.t; sourceTree = "<group>"; };
+		D6CD36BD1E8BD47E007ADCAF /* MVCController.h.mvc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MVCController.h.mvc; sourceTree = "<group>"; };
+		D6CD36BE1E8BD47E007ADCAF /* MVCController.m.mvc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MVCController.m.mvc; sourceTree = "<group>"; };
+		D6CD36C01E8BD48E007ADCAF /* MVCView.h.mvc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MVCView.h.mvc; sourceTree = "<group>"; };
+		D6CD36C11E8BD48E007ADCAF /* MVCView.m.mvc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MVCView.m.mvc; sourceTree = "<group>"; };
+		D6CD36C31E8BD4A8007ADCAF /* MVCModel.h.mvc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MVCModel.h.mvc; sourceTree = "<group>"; };
+		D6CD36C41E8BD4A8007ADCAF /* MVCModel.m.mvc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MVCModel.m.mvc; sourceTree = "<group>"; };
+		D6CD36C81E8BEDDB007ADCAF /* MVVMController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMController.h; sourceTree = "<group>"; };
+		D6CD36C91E8BEDDB007ADCAF /* MVVMController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMController.m; sourceTree = "<group>"; };
+		D6CD36CB1E8BEDEA007ADCAF /* MVVMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMView.h; sourceTree = "<group>"; };
+		D6CD36CC1E8BEDEA007ADCAF /* MVVMView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMView.m; sourceTree = "<group>"; };
+		D6CD36CE1E8BEDF8007ADCAF /* MVVMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMModel.h; sourceTree = "<group>"; };
+		D6CD36CF1E8BEDF8007ADCAF /* MVVMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMModel.m; sourceTree = "<group>"; };
+		D6CD36D11E8BEE09007ADCAF /* MVVMModelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMModelView.h; sourceTree = "<group>"; };
+		D6CD36D21E8BEE09007ADCAF /* MVVMModelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMModelView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +98,9 @@
 		D6CD368D1E8BC599007ADCAF /* iOSArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				D6CD36C71E8BED7D007ADCAF /* MVVM架构 */,
+				D6CD36C61E8BE3A9007ADCAF /* MVP架构 */,
+				D6CD36BC1E8BD435007ADCAF /* MVC架构 */,
 				D6CD36A51E8BC5BF007ADCAF /* 解耦基础 */,
 				D6CD36911E8BC599007ADCAF /* AppDelegate.h */,
 				D6CD36921E8BC599007ADCAF /* AppDelegate.m */,
@@ -141,6 +165,41 @@
 				D6CD36BB1E8BCFAE007ADCAF /* PrintNotification.h.t */,
 			);
 			name = "NSNotification解耦";
+			sourceTree = "<group>";
+		};
+		D6CD36BC1E8BD435007ADCAF /* MVC架构 */ = {
+			isa = PBXGroup;
+			children = (
+				D6CD36BD1E8BD47E007ADCAF /* MVCController.h.mvc */,
+				D6CD36BE1E8BD47E007ADCAF /* MVCController.m.mvc */,
+				D6CD36C01E8BD48E007ADCAF /* MVCView.h.mvc */,
+				D6CD36C11E8BD48E007ADCAF /* MVCView.m.mvc */,
+				D6CD36C31E8BD4A8007ADCAF /* MVCModel.h.mvc */,
+				D6CD36C41E8BD4A8007ADCAF /* MVCModel.m.mvc */,
+			);
+			name = "MVC架构";
+			sourceTree = "<group>";
+		};
+		D6CD36C61E8BE3A9007ADCAF /* MVP架构 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "MVP架构";
+			sourceTree = "<group>";
+		};
+		D6CD36C71E8BED7D007ADCAF /* MVVM架构 */ = {
+			isa = PBXGroup;
+			children = (
+				D6CD36C81E8BEDDB007ADCAF /* MVVMController.h */,
+				D6CD36C91E8BEDDB007ADCAF /* MVVMController.m */,
+				D6CD36CB1E8BEDEA007ADCAF /* MVVMView.h */,
+				D6CD36CC1E8BEDEA007ADCAF /* MVVMView.m */,
+				D6CD36CE1E8BEDF8007ADCAF /* MVVMModel.h */,
+				D6CD36CF1E8BEDF8007ADCAF /* MVVMModel.m */,
+				D6CD36D11E8BEE09007ADCAF /* MVVMModelView.h */,
+				D6CD36D21E8BEE09007ADCAF /* MVVMModelView.m */,
+			);
+			name = "MVVM架构";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,14 +274,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6CD36C51E8BD4A8007ADCAF /* MVCModel.m.mvc in Sources */,
+				D6CD36CA1E8BEDDB007ADCAF /* MVVMController.m in Sources */,
 				D6CD36AB1E8BC640007ADCAF /* Employee.m.txt in Sources */,
 				D6CD36B01E8BCA49007ADCAF /* Manager.m.tx in Sources */,
 				D6CD36961E8BC599007ADCAF /* ViewController.m in Sources */,
 				D6CD36931E8BC599007ADCAF /* AppDelegate.m in Sources */,
+				D6CD36C21E8BD48E007ADCAF /* MVCView.m.mvc in Sources */,
 				D6CD36901E8BC599007ADCAF /* main.m in Sources */,
+				D6CD36D01E8BEDF8007ADCAF /* MVVMModel.m in Sources */,
 				D6CD36A81E8BC62C007ADCAF /* Manager.m.txt in Sources */,
 				D6CD36BA1E8BCF47007ADCAF /* Employee.m.t in Sources */,
 				D6CD36B31E8BCA51007ADCAF /* Employee.m.tx in Sources */,
+				D6CD36D31E8BEE09007ADCAF /* MVVMModelView.m in Sources */,
+				D6CD36BF1E8BD47E007ADCAF /* MVCController.m.mvc in Sources */,
+				D6CD36CD1E8BEDEA007ADCAF /* MVVMView.m in Sources */,
 				D6CD36B71E8BCF3D007ADCAF /* Manager.m.t in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

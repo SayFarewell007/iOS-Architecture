@@ -1,0 +1,55 @@
+//
+//  MVCController.m
+//  iOSArchitecture
+//
+//  Created by Darwin on 2017/3/29.
+//  Copyright © 2017年 Darwin. All rights reserved.
+//
+
+#import "MVCController.h"
+#import "MVCView.h"
+#import "MVCModel.h"
+
+@interface MVCController () <MVCViewDelegate>
+
+@property (nonatomic, strong) MVCView *mvcView;
+@property (nonatomic, strong) MVCModel *mvcModel;
+
+@end
+
+@implementation MVCController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor cyanColor];
+    
+    self.mvcView = [[MVCView alloc] init];
+    self.mvcView.frame = self.view.bounds;
+    [self.view addSubview:_mvcView];
+    
+    self.mvcModel = [MVCModel new];
+    self.mvcView.delegate = self;
+    
+    
+    [self beginPrintTask];
+    
+}
+
+- (void)printBtnClick {
+    // 修改model 让view重新显示
+    int n = arc4random() % 10;
+    self.mvcModel.n = n;
+    [self beginPrintTask];
+}
+
+- (void)beginPrintTask {
+    
+   
+    [self.mvcView printOnView:self.mvcModel];
+    
+}
+
+
+@end

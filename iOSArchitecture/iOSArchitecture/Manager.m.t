@@ -41,5 +41,8 @@
     
 }
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:Notifi_PrintTaskDone];
+}
 
 @end

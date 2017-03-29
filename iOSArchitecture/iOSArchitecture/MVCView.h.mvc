@@ -1,0 +1,24 @@
+//
+//  MVCView.h
+//  iOSArchitecture
+//
+//  Created by Darwin on 2017/3/29.
+//  Copyright © 2017年 Darwin. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@protocol MVCViewDelegate <NSObject>
+
+- (void)printBtnClick;
+
+@end
+
+@class MVCModel;
+@interface MVCView : UIView
+
+@property (nonatomic, weak) id<MVCViewDelegate> delegate;
+
+- (void)printOnView:(MVCModel *)model;
+
+@end
